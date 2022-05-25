@@ -1,6 +1,6 @@
 import "./App.css";
 import useFetchData from "./hooks/useFetchData";
-import { ProductCard } from "./components/ProductCard";
+import { ProductCard } from "./components/ProductCard/ProductCard";
 
 function App() {
   const res = useFetchData("https://fakestoreapi.com/products");
