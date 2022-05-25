@@ -1,13 +1,13 @@
 import {
   ProductCardContainer,
-  ProductCategory,
-  ProductDescription,
   ProductImageContainer,
   ProductInfo,
-  ProductPriceContainer,
-  ProductsRatingContainer,
   ProductTextContainer,
   ProductTitle,
+  ProductDescription,
+  ProductCategory,
+  ProductPriceContainer,
+  ProductsRatingContainer,
 } from "./styledProductCard";
 
 export const ProductCard = ({ product }) => {

@@ -1,21 +1,15 @@
-import {
-  LogoContainer,
-  Nav,
-  SearchContainer,
-  SearchIconContainer,
-  SearchInput,
-} from "./styledNavbar";
+import { Nav, SearchContainer, SearchIcon, SearchInput } from "./styledNavbar";
 
 export const Navbar = ({ searchTerm, setSearchTerm }) => {
   return (
     <Nav>
-      <LogoContainer>
+      <div>
         <h1>Fake Store</h1>
-      </LogoContainer>
+      </div>
       <SearchContainer>
-        <SearchIconContainer>
+        <SearchIcon>
           <i className="bx bx-search-alt-2" />
-        </SearchIconContainer>
+        </SearchIcon>
         <SearchInput
           type="text"
           placeholder="Search by Product Name"
