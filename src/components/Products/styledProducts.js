@@ -9,11 +9,11 @@ export const ProductsContainer = styled.div`
   @media screen and (max-width: 1024px) {
     width: 100%;
     margin: 0;
+    justify-items: center;
   }
 
   @media screen and (max-width: 900px) {
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
   }
 
   @media screen and (max-width: 610px) {
