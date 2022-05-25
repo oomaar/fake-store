@@ -10,12 +10,12 @@ import {
   ProductTitle,
 } from "./styledProductCard";
 
-export const ProductCard = ({ product, key }) => {
+export const ProductCard = ({ product }) => {
   const truncate = (string, n) =>
     string?.length > n ? string.substr(0, n - 1) + "..." : string;
 
   return (
-    <ProductCardContainer key={key}>
+    <ProductCardContainer>
       <ProductImageContainer>
         <img src={product.image} alt="" />
       </ProductImageContainer>
@@ -30,7 +30,9 @@ export const ProductCard = ({ product, key }) => {
         <ProductPriceContainer>
           <p>${product.price}</p>
           <ProductsRatingContainer>
-            <small>Ratings: {product.rating.rate}</small>
+            <small>
+              Ratings: {product.rating.rate} <i className="bx bxs-star" />
+            </small>
             <small>Count: {product.rating.count}</small>
           </ProductsRatingContainer>
         </ProductPriceContainer>
