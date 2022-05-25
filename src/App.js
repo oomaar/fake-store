@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import useFetchData from "./hooks/useFetchData";
+import { ProductCard } from "./components/ProductCard";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const res = useFetchData("https://fakestoreapi.com/products");
+  console.log("🚀 ~ file: App.js ~ line 7 ~ App ~ res", res);
+
+  const products = res.map((product, index) => (
+    <ProductCard product={product} key={index} />
+  ));
+
+  return <div>{products}</div>;
 }
 
 export default App;
