@@ -1,4 +1,3 @@
-import "./App.css";
 import useFetchData from "./hooks/useFetchData";
 import { ProductCard } from "./components/ProductCard/ProductCard";
 
