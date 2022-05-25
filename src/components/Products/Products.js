@@ -1,5 +1,5 @@
 import useFetchData from "../../hooks/useFetchData";
-import { ProductCard } from "../";
+import { ProductCard, Loader } from "../";
 import { ProductsContainer } from "./styledProducts";
 
 export const Products = () => {
@@ -10,11 +10,7 @@ export const Products = () => {
   console.log("🚀 ~ file: Products.js ~ line 10 ~ Products ~ loading", loading);
 
   if (loading) {
-    return (
-      <div>
-        <h1>Loading....</h1>
-      </div>
-    );
+    return <Loader />;
   }
 
   const products = data.map((product, index) => (
