@@ -36,7 +36,7 @@ export const ProductInfo = styled.div`
 `;
 
 export const ProductTextContainer = styled.div`
-  height: 150px;
+  height: 180px;
 `;
 
 export const ProductTitle = styled.p`
